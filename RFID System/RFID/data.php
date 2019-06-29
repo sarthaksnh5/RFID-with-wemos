@@ -3,7 +3,7 @@
 require('connectDB.php');
 
 if(!empty($_GET['CardID'])){
-	$q = $_GET['CardID'];
+	$q = mysqli_real_escape_string($con, $_GET['CardID']);
 	$query = "Select * from new_users where cardid = '$q';";
 	$result = mysqli_query($conn, $query);
 	if(mysqli_num_rows($result) > 0){		
