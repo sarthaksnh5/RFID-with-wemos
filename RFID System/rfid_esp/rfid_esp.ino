@@ -12,8 +12,8 @@
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
-const char *ssid = "Airtel-B310-14AE";
-const char *pass = "angrej4590";
+const char *ssid = "Username";
+const char *pass = "password";
 
 String host = "http://192.168.1.103/loginsystem/";
 
